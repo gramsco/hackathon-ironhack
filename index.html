@@ -7,49 +7,240 @@
     <title>White Trash</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleMobile.css" />
+    <script type="module" src="script.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Muli&display=swap"
       rel="stylesheet"
+    />
+    <!-- FullPage -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
   </head>
 
-  <body>
+  <body id="#top">
     <!-- Navs -->
     <nav class="NavBar__Desktop">
-      <div class="Logo">Logo</div>
+      <div class="Logo"><img src="imgs/logo.png" /></div>
       <div class="side_menu">
-        <div>Something</div>
-        <div>Something</div>
-        <div>Something</div>
-        <div>Something</div>
+        <div>Solutions</div>
+        <div>Pricing</div>
+        <div>Help</div>
+        <div>Sign in</div>
       </div>
     </nav>
     <nav class="NavBar__Mobile">
-      <div class="Logo">Logo</div>
+      <div class="Logo"><img src="imgs/logo.png" /></div>
       <div class="Burger__Menu"><i class="fas fa-bars"></i></div>
     </nav>
 
     <!-- Sections -->
+    <div class="wraper" id="fullpage">
+      <section class="First section">
+        <header>
+          <div class="paragraphe_and_image">
+            <div class="paragraphe_image">
+              <h1>The first Green trash effortless service</h1>
+              <p>Have a positive impact on the planet effortlessly</p>
+            </div>
+            <div class="buttons__desktop">
+              <button>First Button</button>
+              <button>Second Button</button>
+            </div>
+          </div>
 
-    <section class="First">
-      <header>
-        <img src="https://images.unsplash.com/photo-1495770283154-c990d0050a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1655&q=80" alt="cool image" />
-        <h1>Phrase Catchy</h1>
-      </header>
+          <div class="Paragraphe">
+            <h1>The Greensh</h1>
+            <p>The first Green trash effortless service</p>
+            <p>Have a positive impact on the planet effortlessly</p>
+          </div>
 
-      <div class="Paragraphe">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio
-        quia aperiam ipsam, consequatur, recusandae voluptas eligendi enim quo
-        incidunt consequuntur. Vitae, necessitatibus? Id distinctio hic nemo
-        officia commodi ipsum.
+          <div class="buttons__mobile">
+            <button>First Button</button>
+            <button>Second Button</button>
+          </div>
+        </header>
+      </section>
+
+      <section class="Second section">
+        <div class="Second__Container">
+          <h2>How does it work?</h2>
+          <img src="./imgs/cycle_hor.png" />
+        </div>
+      </section>
+
+      <section class="Third section">
+        <div class="Third container">
+          <div class="Third__Left"><img src="./imgs/valise.png" /></div>
+          <div class="Third__Right">
+            <h2>Greensh</h2>
+
+            <div>
+              <h3>No more trash bags</h3>
+              <p>4 Components to sort(Glass, Paper, Bio, "I don't know")</p>
+              <h3 style="text-align:left">Connected</h3>
+              <p>knows by itself when it's time to empty</p>
+              <h3>Beautiful and easy to move</h3>
+              <p>designed by Starck and 4 wheels</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Four section">
+        <div class="Four__Container">
+          <div class="Four__Left">
+            <h3>The collect</h3>
+
+            <ul>
+              <li>With electic vehicles</li>
+              <li>8am to 12pm – 7days/7</li>
+              <li>Free collection (4€/month)</li>
+              <li>5€ additional collection</li>
+            </ul>
+          </div>
+          <div class="Four__Right">
+            <img src="./imgs/collect.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="Five section">
+        <div class="Five__Container">
+          <div class="Five__Left"></div>
+          <div class="Five__Right">
+            <p>Receive your Stats every month</p>
+            <p>We make you advices to sort better</p>
+            <p>You’re ranked in your neighborhood</p>
+            <p>The 10 best recyclers will receive 1 free month subscription</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Six section">
+        <div class="Six__Container">
+        <h3>In the app :</h3>
+        <div>
+          <p>Receive your Stats every month</p>
+          <p>We make you advices to sort better</p>
+          <p>You’re ranked in your neighborhood</p>
+          <p>The 10 best recyclers will receive 1 free month subscription</p>
+        </div>
+        <div container="Six__imgs">
+          <img src="imgs/apple.svg" />
+          <img src="imgs/google.png" />
+        </div>
+        </div>
+      </section>
+
+      <div class="arrow__up">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
       </div>
-    </section>
-    <section class="Second"></section>
-    <section class="Third"></section>
-    <section class="Four"></section>
+    </div>
+
+    <script>
+      //   let fullpage = document.querySelector(".wraper");
+      //   console.log(screen.width)
+      //   if (screen.width <= 900) fullpage.removeAttribute("id");
+      //   else {
+      var myFullpage =
+        window.innerWidth < 900
+          ? ""
+          : new fullpage("#fullpage", {
+              //Navigation
+              menu: "#menu",
+              lockAnchors: false,
+              anchors: ["firstPage", "secondPage"],
+              navigation: true,
+              navigationPosition: "right",
+              navigationTooltips: [""],
+              showActiveTooltip: false,
+              slidesNavigation: false,
+              slidesNavPosition: "bottom",
+
+              //Scrolling
+              css3: true,
+              scrollingSpeed: 700,
+              autoScrolling: true,
+              fitToSection: true,
+              fitToSectionDelay: 1000,
+              scrollBar: false,
+              easing: "easeInOutCubic",
+              easingcss3: "ease",
+              loopBottom: false,
+              loopTop: false,
+              loopHorizontal: true,
+              continuousVertical: false,
+              continuousHorizontal: false,
+              scrollHorizontally: false,
+              interlockedSlides: false,
+              dragAndMove: false,
+              offsetSections: false,
+              resetSliders: false,
+              fadingEffect: false,
+              normalScrollElements: "#element1, .element2",
+              scrollOverflow: true,
+              scrollOverflowReset: false,
+              scrollOverflowOptions: null,
+              touchSensitivity: 15,
+              bigSectionsDestination: null,
+
+              //Accessibility
+              keyboardScrolling: true,
+              animateAnchor: true,
+              recordHistory: true,
+
+              //Design
+              controlArrows: true,
+              verticalCentered: true,
+              sectionsColor: ["#ccc", "#fff"],
+              paddingTop: "2%",
+              paddingBottom: "10px",
+              fixedElements: "#header, .footer",
+              responsiveWidth: 0,
+              responsiveHeight: 0,
+              responsiveSlides: false,
+              parallax: false,
+              parallaxOptions: {
+                type: "reveal",
+                percentage: 62,
+                property: "translate"
+              },
+              cards: false,
+              cardsOptions: {
+                perspective: 100
+                // fadeContent: true,
+                // fadeBackground: true
+              },
+
+              //Custom selectors
+              sectionSelector: ".section",
+              slideSelector: ".slide",
+
+              lazyLoading: true,
+
+              //events
+              onLeave: function(origin, destination, direction) {},
+              afterLoad: function(origin, destination, direction) {},
+              afterRender: function() {},
+              afterResize: function(width, height) {},
+              afterReBuild: function() {},
+              afterResponsive: function(isResponsive) {},
+              afterSlideLoad: function(
+                section,
+                origin,
+                destination,
+                direction
+              ) {},
+              onSlideLeave: function(section, origin, destination, direction) {}
+            });
+      // }
+    </script>
   </body>
 </html>
