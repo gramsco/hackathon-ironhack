@@ -53,6 +53,10 @@
     height:100vh;
   }
 
+  .paragraphe_and_image{
+    height:0;
+  }
+
   .Second{
     /* margin-top:30%; */
     display:flex;
