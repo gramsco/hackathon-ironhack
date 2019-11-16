@@ -1,0 +1,41 @@
+@media (max-width: 850px) {
+  body {
+    /* background: red; */
+  }
+
+  .NavBar__Mobile {
+    visibility: visible;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10%;
+    background: var(--color-one);
+    color: var(--color-two);
+    border:solid 1px black;
+    padding:0 5%;
+  }
+
+  .NavBar__Desktop {
+    visibility: hidden;
+  }
+
+  .First{
+  margin-top:14%;
+  }
+
+  .First header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Paragraphe{
+    margin: 0 5%;
+  }
+
+}

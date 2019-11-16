@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --background-color: #f77754;
+  --text-color: #584b42;
+  --color-one: #537d91;
+  --color-two: #a4d1c8;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "Muli", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+.NavBar__Desktop {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10%;
+  background: var(--color-one);
+  color: var(--color-two);
+  visibility: visible;
+}
+
+.NavBar__Mobile {
+  visibility: hidden;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px white;
+}
+
+.side_menu {
+  display: flex;
+  width: 600px;
+  /* border:solid 1px white; */
+  justify-content: center;
+  align-items: center;
+}
+
+.side_menu > * {
+  margin: 5%;
+  width: 100px;
+}
+
+.side_menu > *:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+section{
+    height:100vh;
+    width:100vw;
+    background:rgba(0,0,0,0.2);
+    border-bottom:solid 5px white;
+}
+
