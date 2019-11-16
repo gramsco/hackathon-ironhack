@@ -44,8 +44,9 @@
     visibility: hidden;
   }
 
-  .First {
+  .First.section {
     margin-top: 5%;
+    padding-bottom:5%;
     height:80vh;
   }
 
