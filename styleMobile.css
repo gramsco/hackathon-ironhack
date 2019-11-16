@@ -53,6 +53,30 @@
     height:100vh;
   }
 
+  .second_to_hide{
+    display:none;
+  }
+
+  .second.mobile.background{
+    display:inherit;
+    width:60%;
+
+    /* height:70vh; */
+    /* background-size:50%; */
+    background-repeat:no-repeat;
+    /* border:solid 1px black; */
+    /* background:url('./imgs/cycle_vert.png'); */
+    /* background:red; */
+  }
+
+  .Second h2{
+    margin-bottom:0;
+  }
+
+  .Second{
+    margin-bottom:3%;
+  }
+
   .paragraphe_and_image{
     height:0;
   }
@@ -108,6 +132,10 @@
     height:80vh;
   }
 
+  .Third{
+    text-align:center;
+  }
+
   .Third > * {
     margin:2%;
     width:90vw;
@@ -119,6 +147,14 @@
 
   .Third h3, .Third h2{
     text-align:center;
+  }
+  
+  .Four.section{
+    max-height:60vh;
+  }
+
+  .Four__Container{
+    height:80vh;
   }
 
   .illustration{

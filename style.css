@@ -108,6 +108,9 @@ body {
   height:100%;
 }
 
+.second.mobile.background{
+  display:none;
+}
 
 
 .paragraphe_and_image{
