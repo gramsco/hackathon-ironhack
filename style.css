@@ -108,6 +108,8 @@ body {
   height:100%;
 }
 
+
+
 .paragraphe_and_image{
   display:flex;
   width:100vw;
@@ -125,7 +127,7 @@ body {
   visibility: visible;
   /* position:absolute; */
   /* border:solid 1px black; */
-  height: 100%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,6 +217,7 @@ body {
   justify-content: space-around;
   align-items:center;
   height:80%;
+  width:80%;
   /* border:solid 1px black; */
 }
 
